@@ -132,61 +132,159 @@ através de projetos com dados públicos.<br /> Sinta-se a vontade para entrar e
 
 				<!-- Two -->
 					<section id="two">
+   <style>
+    #two .project-card {
+        padding: 1.1em;
+        margin-bottom: 1.5em;
+        border: 1px solid rgba(120, 120, 120, 0.25);
+        border-radius: 8px;
+        background: rgba(120, 120, 120, 0.035);
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    #two .project-card h3 {
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 0.7em;
+    }
+
+    #two .project-card p {
+        font-size: 1.05em;
+        line-height: 1.75;
+        margin-bottom: 1.1em;
+    }
+
+    #two .project-preview {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 6px;
+        margin: 0.5em 0 1.2em;
+        border: 1px solid rgba(120, 120, 120, 0.25);
+    }
+
+    #two .project-card .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6em;
+        margin-bottom: 0;
+    }
+
+    #two .project-card .actions li {
+        padding: 0;
+    }
+
+    @media screen and (max-width: 736px) {
+        #two .project-card {
+            padding: 1em;
+        }
+
+        #two .project-card h3 {
+            font-size: 1.2em;
+        }
+
+        #two .project-card p {
+            font-size: 1em;
+        }
+    }
+</style>
+
+<section id="two">
     <h2>Projetos Destaque</h2>
 
-    <article class="col-6 col-12-xsmall work-item">
-        <img
-            src="images/projeto-dre-petrobras.png"
-            class="image fit"
-            alt="Dashboard de DRE da Petrobras desenvolvido no Power BI"
-        />
+    <div class="row">
 
-        <h3>Análise Financeira - DRE Petrobras</h3>
+        <!-- Projeto 1: DRE Petrobras -->
+        <article class="col-6 col-12-xsmall work-item">
+            <div class="project-card">
 
-        <p>
-            Projeto de Business Intelligence desenvolvido no Power BI para análise descritiva e diagnóstica da DRE da Petrobras. Inclui modelagem de dados, medidas DAX, indicadores financeiros, comparação entre exercícios e visualizações interativas.
-        </p>
+                <h3>Análise Financeira — DRE Petrobras</h3>
 
-        <ul class="actions">
-            <li>
-                <a href="projeto_power_bi_apresentacao_A4_horizontal.pdf"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="button small">
-                    Ver Projeto
-                </a>
-            </li>
-            <li>
-                <a href="relatorio_dre_petrobras_power_bi.pdf"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="button small">
-                    Relatório
-                </a>
-            </li>
-        </ul>
-    </article>
-							
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-                                <img src="images/chris-ried-ieic5Tq8YMk-unsplash.jpg" class="image fit" alt="Projeto 1" />
-								<h3>Dashboard Completo de E-commerce com Insights de Negócio</h3>
-								<p>
-Desenvolvi um dashboard interativo para análise de dados de e-commerce utilizando Python, SQL e Streamlit, com foco na geração de insights para tomada de decisão. O projeto inclui a construção de uma tabela fato para unificar diferentes fontes de dados, como receita, pedidos, logística, geografia, vendedores e produtos, permitindo a aplicação de filtros globais e análises integradas. Foram realizadas análises envolvendo a evolução de receita, pedidos e ticket médio, performance de vendedores, distribuição geográfica de vendas, impacto da logística na satisfação do cliente e análise de categorias de produtos com base no princípio de Pareto. Além disso, o dashboard conta com insights automáticos que destacam riscos operacionais, oportunidades de crescimento e concentração de receita. O projeto foi estruturado com foco em boas práticas de análise de dados e visualização, simulando um ambiente real de negócio.
-</p>
-						<ul class="actions">
-        <li>
-            <a href="https://viniqc482-dashboard-olist-app-xfhkfg.streamlit.app/" target="_blank" class="button small">
-                Ver Projeto
-            </a>
-        </li>
-    </ul>
-</article>
-							
-						</div>
-						</ul>
-					</section>
+                <p>
+                    Projeto de Business Intelligence desenvolvido no Power BI
+                    para análise descritiva e diagnóstica da DRE da Petrobras.
+                    Inclui modelagem de dados, medidas DAX, indicadores financeiros,
+                    comparação entre exercícios e visualizações interativas.
+                </p>
 
+                <img
+                    src="images/projeto-dre-petrobras.png"
+                    class="project-preview"
+                    alt="Dashboard de DRE da Petrobras desenvolvido no Power BI"
+                    loading="lazy"
+                />
+
+                <ul class="actions">
+                    <li>
+                        <a
+                            href="projeto_power_bi_apresentacao_A4_horizontal.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button small"
+                        >
+                            Ver Projeto
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="relatorio_dre_petrobras_power_bi.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button small"
+                        >
+                            Relatório
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <!-- Projeto 2: E-commerce -->
+        <article class="col-6 col-12-xsmall work-item">
+            <div class="project-card">
+
+                <h3>Dashboard de E-commerce com Insights de Negócio</h3>
+
+                <p>
+                    Desenvolvi um dashboard interativo para análise de dados de
+                    e-commerce utilizando Python, SQL e Streamlit. O projeto
+                    integra informações de receita, pedidos, logística, geografia,
+                    vendedores e produtos em uma estrutura analítica unificada.
+                    Inclui filtros e visualizações para explorar a evolução das
+                    vendas, o ticket médio, o desempenho comercial, a distribuição
+                    geográfica, a logística e as categorias de produtos.
+                </p>
+
+                <img
+                    src="images/dashboard-ecommerce.png"
+                    class="project-preview"
+                    alt="Dashboard de análise de e-commerce desenvolvido com Python, SQL e Streamlit"
+                    loading="lazy"
+                />
+
+                <ul class="actions">
+                    <li>
+                        <a
+                            href="https://viniqc482-dashboard-olist-app-xfhkfg.streamlit.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="button small"
+                        >
+                            Ver Projeto
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+    </div>
+</section>
 	
 				<!-- Four -->
 				<!--
